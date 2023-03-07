@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import "normalize.css";
+
+a:link{
+    color:black;
+}
+a:hover{
+    color: white;
+}
+a:visited{
+    color:red;
+}
+img{
+    width:100%;
+    display: block;
+}
+.words{
+    font-family: 'Racing Sans One', cursive;
+}
+.content{
+    background-color: silver;
+}
+.image{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+}
+
+@media screen and (max-width: 500px){
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: silver;
+    grid-gap: 15px;
+}
+}
+
+@media screen and (min-width: 500px){
+    .nav{
+    background-image: url(img/original.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    .grid{
+        display: grid;
+        background-color: silver;
+        grid-gap: 15px;
+    }
+}
